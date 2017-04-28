@@ -1,9 +1,18 @@
 /*The default CSS styles for a computer screen*/
+
 h1 {
     font-size: 2em;
-    color: #5B10BF;
+    color: #006633;
 }
+
+canvas {
+    margin-left: 30%;
+    border: 2px solid #006633;
+}
+
+
 /*Removes annoying extra space around the website*/
+
 html,
 body {
     margin: 0;
@@ -14,11 +23,10 @@ body {
 
 h2,
 h3 {
-    color: #B25607;
+    color: green;
 }
 
 h3 {
-    color: #FF8E2D;
     font-size: 1.25em;
 }
 
@@ -58,11 +66,11 @@ ul li {
 #main-nav {
     float: left;
     width: 14em;
-    background: #F28E09;
+    background: #006633;
     position: fixed;
     margin: 0;
     height: 100%;
-    border-right: .2em solid #A67D47;
+    border-right: .2em solid #ffcc00;
     text-align: center;
 }
 
@@ -78,7 +86,7 @@ p {
 #main-nav img {
     display: block;
     border-radius: 50%;
-    border: .2em solid #A67D47;
+    border: .2em solid #ffcc00;
     margin-top: 7%;
     margin-left: auto;
     margin-right: auto;
@@ -94,9 +102,9 @@ p {
     padding: .3em;
     display: block;
     text-align: center;
-    background: #23F459;
-    color: #333;
-    border: .1em solid #19B040;
+    background: #ffcc00;
+    color: #000000;
+    border: .1em solid #000000;
 }
 
 #main-nav ul li a,
@@ -109,11 +117,11 @@ p {
 #main-nav ul li a:focus,
 #main-nav ul li a:active {
     background: #fff;
-    color: #5B10BF;
+    color: #ffcc00;
 }
 
 footer {
-    color: black;
+    color: #ffcc00;
     clear: right;
     position: absolute;
     bottom: 0;
@@ -125,16 +133,16 @@ a:link {
 }
 
 a:visited {
-    color: #7753A6;
+    color: green;
 }
 
 a:active {
-    color: #5B10BF;
+    color: #006633;
 }
 
-a::hover,
-a::focus {
-    color: #5B10BF;
+a:hover,
+a:focus {
+    color: #ffcc00;
 }
 
 #content-left {
@@ -157,11 +165,15 @@ a::focus {
     float: right;
     margin-right: 10%;
 }
+
 .travel {
     border-radius: 5%;
     box-shadow: 2px 2px 5px #888888;
 }
+
+
 /*The media query that changes the CSS for iPad size */
+
 @media only screen and (max-width: 1024px) {
     #main {
         float: none;
@@ -207,7 +219,10 @@ a::focus {
         width: 100%;
     }
 }
+
+
 /*The media query that changes the CSS for phone size */
+
 @media only screen and (max-width: 768px) {
     #main {
         float: none;
