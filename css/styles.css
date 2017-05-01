@@ -6,7 +6,6 @@ h1 {
 }
 
 canvas {
-    margin-left: 30%;
     border: 2px solid #006633;
 }
 
@@ -19,6 +18,10 @@ body {
     padding: 0;
     background: #f5f5f5;
     font-family: 'Arvo', serif;
+}
+
+#title {
+    text-align: center;
 }
 
 h2,
@@ -49,10 +52,10 @@ h3 {
 }
 
 #main {
-    float: right;
+    height: 100vh;
+    position: absolute;
+    right: 0;
     width: 87%;
-    margin-left: .05%;
-    padding-left: .05%;
 }
 
 #dogpics {
@@ -61,11 +64,13 @@ h3 {
 
 ul li {
     font-size: 1em;
+    margin: 0;
 }
 
 #main-nav {
-    float: left;
-    width: 14em;
+    width: 12%;
+    max-width: 225px;
+    display: inline-block;
     background: #006633;
     position: fixed;
     margin: 0;
@@ -85,12 +90,12 @@ p {
 
 #main-nav img {
     display: block;
+    width: 75%;
     border-radius: 50%;
     border: .2em solid #ffcc00;
     margin-top: 7%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
     height: auto;
 }
 
@@ -122,10 +127,10 @@ p {
 
 footer {
     color: #ffcc00;
-    clear: right;
     position: absolute;
     bottom: 0;
-    left: 20%;
+    left: 10%;
+    right: 10%;
 }
 
 a:link {
@@ -184,17 +189,21 @@ a:focus {
     }
     #main-nav img {
         margin-top: 0;
+        width: 200px;
     }
     #main-nav {
         float: none;
+        max-width: none;
         position: relative;
         height: fit-content;
         border-right: none;
-        margin-top: 0;
+        padding-left: 0;
         width: 100%;
+        margin: 0;
     }
     footer {
         position: relative;
+        width: 200px;
         margin: auto;
     }
     body {
@@ -232,6 +241,7 @@ a:focus {
         font-size: 2em;
     }
     #main-nav img {
+        max-width: 100px;
         margin-top: 0;
     }
     #main-nav {
@@ -239,12 +249,14 @@ a:focus {
         position: relative;
         height: fit-content;
         border-right: none;
-        margin-top: 0;
+        margin: 0;
+        max-width: none;
         width: 100%;
     }
     footer {
         position: relative;
-        margin: auto;
+        width: 200px;
+        margin: 0;
     }
     html,
     body {

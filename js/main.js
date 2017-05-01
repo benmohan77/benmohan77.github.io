@@ -20,14 +20,14 @@ function load() {
     queue.on("complete", init, this);
     queue.installPlugin(createjs.Sound);
     queue.loadManifest([
-        { id: "p1TankPNG", src: "red_tank.png" },
-        { id: "tankBarrel", src: "barrel.png" },
-        { id: "p2TankPNG", src: "green_tank.png" },
-        { id: "smokeSheet", src: "smoke.png" },
-        { id: "p3TankPNG", src: "orange_tank.png" },
-        { id: "p4TankPNG", src: "black_tank.png" },
-        { id: "p5TankPNG", src: "blue_tank.png" },
-        { id: "p6TankPNG", src: "white_tank.png" }
+        { id: "p1TankPNG", src: "js/red_tank.png" },
+        { id: "tankBarrel", src: "js/barrel.png" },
+        { id: "p2TankPNG", src: "js/green_tank.png" },
+        { id: "smokeSheet", src: "js/smoke.png" },
+        { id: "p3TankPNG", src: "js/orange_tank.png" },
+        { id: "p4TankPNG", src: "js/black_tank.png" },
+        { id: "p5TankPNG", src: "js/blue_tank.png" },
+        { id: "p6TankPNG", src: "js/white_tank.png" }
     ]);
 }
 
@@ -52,9 +52,9 @@ function init() {
     button.y = (stageYdimens / 2) - 20;
 
     //Sound initialization
-    createjs.Sound.registerSound("gun.wav", gunSound);
-    createjs.Sound.registerSound("boom.wav", boomSound);
-    createjs.Sound.registerSound("rip.wav", ripSound);
+    createjs.Sound.registerSound("js/gun.wav", gunSound);
+    createjs.Sound.registerSound("js/boom.wav", boomSound);
+    createjs.Sound.registerSound("js/rip.wav", ripSound);
 
     // Create button for decreasing players
     btnDecreasePlayers = new ArrowButton(0);
